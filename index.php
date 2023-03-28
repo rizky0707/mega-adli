@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding | Mega & Adli</title>
-    <meta property="og:description" content="Pernikahan Mega &amp; Adli | 14 Mei 2023" />
-	<meta property="og:url" content="https://mega-adli.duanira.com/" />
-    <meta property="og:image" content="images/thumbnail.png" />
-	<meta property="og:image:width" content="1152" />
-	<meta property="og:image:height" content="768" />
-	<meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:description" content="Pernikahan Mega &amp; Adli | 14 Mei 2023" />
+	<meta name="twitter:url" content="https://mega-adli.duanira.com/" />
+    <meta name="twitter:image" content="images/thumbnail.png" />
+	<meta name="twitter:image:width" content="1152" />
+	<meta name="twitter:image:height" content="768" />
+	<meta name="twitter:image:type" content="image/jpeg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
