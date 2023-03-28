@@ -7,10 +7,10 @@
     <title>Wedding | Mega & Adli</title>
     <meta name="twitter:description" content="Pernikahan Mega &amp; Adli | 14 Mei 2023" />
 	<meta name="twitter:url" content="https://mega-adli.duanira.com/" />
-    <meta name="twitter:image" content="https://mega-adli.duanira.com/images/thumbnail.png" />
-	<meta name="twitter:image:width" content="1152" />
-	<meta name="twitter:image:height" content="768" />
-	<meta name="twitter:image:type" content="image/jpeg" />
+  <meta property="twitter:image" content="https://mega-adli.duanira.com/images/thumbnail.png" />
+	<meta property="twitter:image:width" content="1152" />
+	<meta property="twitter:image:height" content="768" />
+	<meta property="twitter:image:type" content="image/jpeg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
