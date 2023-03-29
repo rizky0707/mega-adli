@@ -1,7 +1,7 @@
 ﻿<?php
 // Create database connection using config file
+// ob_start();
 include_once("config.php");
- 
 // Fetch all users data from database
 ?>
 
@@ -322,6 +322,20 @@ tr, td {
 }
 
     </style>
+    <script>
+    //check for Navigation Timing API support
+if (window.performance) {
+  console.info("window.performance works fine on this browser");
+}
+
+if (performance.navigation.type == 1) {
+ console.info( "This page is reloaded" );
+ window.location.reload()
+ window.location = "index.php"; // The url you want
+} else {
+ console.info( "This page is not reloaded");
+}
+    </script>
 </head>
 <body>
   
@@ -651,7 +665,7 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
             <img src="https://kartinisugih.com/wp-content/uploads/2022/11/Copy-of-Kiara-Austen-Studios-sampel-get-asset-another-3.png" width="50px" alt="">
           </div>
           <div class="col-md-10 text-light pb-4" id="post">
-            <form method="POST" action="#post">
+            <form method="POST" action="">
               <div class="form-group">
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama" required>
@@ -678,8 +692,9 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
             $pesan = $_POST['pesan'];
              
             // menginput data ke database
+            if(!empty($nama) && !empty($keterangan) && !empty($pesan)){
             mysqli_query($config,"insert into mega_adli values('','$nama','$keterangan','$pesan')");
-             
+            }
             // mengalihkan halaman kembali ke index.php
             echo "<div class='row justify-content-center mt-5'>
             <div class='col-md-12'>
@@ -689,6 +704,9 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
               </div>
             </div>
         </div>";
+            // header('location: invit.php#table');
+            // exit();
+            
             }
             ?>
         </div>
@@ -789,6 +807,7 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
     <script src="dist/js/lightbox-plus-jquery.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <script src="js/wow.min.js"></script>
+    
 
     <script>
     $(document).ready(function() {
