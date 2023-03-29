@@ -1,6 +1,6 @@
 ﻿<?php
 // Create database connection using config file
-// ob_start();
+ob_start();
 include_once("config.php");
 // Fetch all users data from database
 ?>
@@ -683,7 +683,7 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
               </div>
              
               
-              <button type="submit" name="btn_simpan" class="btn btn-primary">Send Your Message</button>
+              <button type="submit" name="btn_simpan" class="btn btn-primary" onclick="return mess();">Send Your Message</button>
             </form>
             <?php 
             if(isset($_POST['btn_simpan'])){
@@ -696,16 +696,16 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
             mysqli_query($config,"insert into mega_adli values('','$nama','$keterangan','$pesan')");
             }
             // mengalihkan halaman kembali ke index.php
-            echo "<div class='row justify-content-center mt-5'>
-            <div class='col-md-12'>
-                <div class='alert alert-success' role='alert'>
-                <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
-                <strong>Success!</strong> Terima Kasih Atas Ucapannya!
-              </div>
-            </div>
-        </div>";
-            // header('location: invit.php#table');
-            // exit();
+        //     echo "<div class='row justify-content-center mt-5'>
+        //     <div class='col-md-12'>
+        //         <div class='alert alert-success' role='alert'>
+        //         <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+        //         <strong>Success!</strong> Terima Kasih Atas Ucapannya!
+        //       </div>
+        //     </div>
+        // </div>";
+            header('location: invit.php#table');
+            exit();
             
             }
             ?>
@@ -801,6 +801,21 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
   </div>
   </footer>
 
+  <script type="text/javascript">
+      function mess () 
+      {
+        // document.write(`"<div class='row justify-content-center mt-5'>
+        // <div class='col-md-12'>
+        // <div class='alert alert-success' role='alert'>
+        // <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+        // <strong>Success!</strong> Terima Kasih Atas Ucapannya!
+        // </div>
+        // </div>
+        // </div>"`);
+        alert ("Terima Kasih Atas Ucapannya!");
+        return true;
+      }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script></body>
@@ -808,6 +823,7 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <script src="js/wow.min.js"></script>
     
+   
 
     <script>
     $(document).ready(function() {
