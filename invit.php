@@ -374,7 +374,7 @@ if (performance.navigation.type == 1) {
   </header>
  
   <ul class="nav-ul row justify-content-center">
-    <li class="nav-li col-2"><a href="invit.html#home">Home</a></li>
+    <li class="nav-li col-2"><a href="#home">Home</a></li>
     <li class="nav-li col-2"><a href="#event">Lokasi</a></li>
     <li class="nav-li col-2"><a href="#rsvp">RSVP</a></li>
     <li class="nav-li col-2"><a href="#about">Tentang</a></li>
