@@ -671,7 +671,7 @@ Jl. Raya Cinunuk No.186, Cinunuk, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 4
                 <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nama" required>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Komfirmasi Kehadiran</label>
+                <label for="exampleInputPassword1">Konfirmasi Kehadiran</label>
                 <select name="keterangan" class="form-control" id="exampleFormControlSelect1" required>
                   <option value="Hadir">Hadir</option>
                   <option value="Tidak">Tidak</option>
