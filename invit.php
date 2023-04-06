@@ -253,8 +253,23 @@ tr, td {
 }
 
 @media (min-width: 320px) and (max-width: 768px) { 
-
+ .arrum-spasing {
   
+  padding-top: 150px;
+  padding-right: 10px;
+  padding-bottom: 150px;
+  padding-left: 10px;
+  text-align: center;
+ }
+  
+ .bg-arrum{
+  /* background-image: url("https://sherlyarfan.me/wp-content/uploads/2022/09/Peach-and-Pink-Floral-Watercolor-Wedding-Invitation-1536x1167.png"); */
+  background-image: linear-gradient(to right, #4343438e 0%, rgba(0, 0, 0, 0.356) 100%),  url('images/bg-arrum.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
 
   ul, li {
     font-size: 13px;
