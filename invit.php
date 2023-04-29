@@ -491,14 +491,14 @@ if (performance.navigation.type == 1) {
             <img src="images/ring.gif" width="60" height="60" alt="" srcset="">
           </div>
           <h4 class="txt-judul pt-4">Akad Nikah</h4>
-          <p class="pg-1 pt-3">Minggu, 14 Mei 2023<br>07.00 - 09.00</p>
+          <p class="pg-1 pt-3">Minggu, 14 Mei 2023<br>08.00 - 09.00</p>
           </div>
           <div class="col-md-6">
             <div class="icon pt-4">
               <img src="images/wedding-date.gif" width="60" height="60" alt="" srcset="">
             </div>
             <h4 class="txt-judul pt-4">Resepsi</h4>
-            <p class="pg-1 pt-3">Minggu, 14 Mei 2023<br>09.00 - 13.00</p>
+            <p class="pg-1 pt-3">Minggu, 14 Mei 2023<br>10.30 - 13.30</p>
           </div>
           
           </div>
